@@ -1,5 +1,5 @@
 <template>
-  <ul class="text-clr-light flex text-3xl space-x-1">
+  <ul class="text-clr-light flex text-2xl space-x-1">
     <li class="cursor-pointer hover:text-clr-secondary">
         <ion-icon name="logo-facebook"></ion-icon>
     </li>

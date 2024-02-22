@@ -12,9 +12,10 @@ export default {
         'clr-dark': '#000000',
         'clr-light': '#ffffff',
         'hover-primary': '#00569c',
+        'hover-primary-bright': '#008cff',
         'clr-gray': '#ffffff90'
       }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

@@ -6,7 +6,7 @@ import Contact from '../pages/ContactPage.vue'
 import Games from '../pages/GamesPage.vue'
 import News from '../pages/NewsPage.vue'
 import Support from '../pages/SupportPage.vue'
-
+import NotFound from '../pages/NotFoundPage.vue'
 
 const routes = [
     {
@@ -31,7 +31,8 @@ const routes = [
         component: News,
         meta: {
             title: 'News - GGBlog'
-        }
+        },
+        reload: true
     },
     {
         path: '/contact',
@@ -55,6 +56,18 @@ const routes = [
         component: Support,
         meta: {
             title: 'Support - GGBlog'
+        }
+    },
+    {
+        path: '/:catchAll(.*)',
+        redirect: '/404'
+    },
+    {
+        path: '/404',
+        name: 'NotFound',
+        component: NotFound,
+        meta: {
+            title: '404 Not Found - GGBlog'
         }
     }
 ]
